@@ -1,4 +1,3 @@
-<<<<<<<<< saved version
 ---
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
@@ -89,22 +88,6 @@ Parameters:
     ConstraintDescription: "CIDR block parameter must be in the form x.x.x.x/x"
     Description: "Allowed CIDR block for  webserver access"
     Type: String
-Resources:
-=========
----
-AWSTemplateFormatVersion: 2010-09-09
-
-Description:
-  This template creates the VPC and workload as nested stacks.
-
-Parameters:
-  set of parameters
-
-Mappings:
-  set of mappings
-
-Conditions:
-  set of conditions
 
 Resources:
   VPCStack:
@@ -124,9 +107,7 @@ Resources:
         PublicSubnet2CIDR: !Ref PublicSubnet2CIDR
         VPCCIDR: !Ref VPCCIDR
 Outputs:
-  set of outputs
->>>>>>>>> local version  
- 
+
  
 
   
