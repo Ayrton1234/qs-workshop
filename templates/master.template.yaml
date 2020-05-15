@@ -106,9 +106,6 @@ Resources:
         PublicSubnet1CIDR: !Ref PublicSubnet1CIDR
         PublicSubnet2CIDR: !Ref PublicSubnet2CIDR
         VPCCIDR: !Ref VPCCIDR
-Outputs:
-
- 
 
     WorkloadStack:
     DependsOn: VPCStack
@@ -153,3 +150,22 @@ Outputs:
           Fn::GetAtt:
           - VPCStack
           - Outputs.VPCCIDR
+<<<<<<<<< saved version
+Outputs:
+  WebURL:
+    Description: "The web server URL"
+    Value:
+      Fn::GetAtt:
+      - WorkloadStack
+      - Outputs.URL
+=========
+          
+Outputs:
+  WebUrl:
+    Description: The web server URL
+    Value:
+      Fn::GetAtt:
+      - WorkloadStack
+      - Outputs.URL
+
+>>>>>>>>> local version
