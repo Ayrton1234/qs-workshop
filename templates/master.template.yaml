@@ -150,16 +150,7 @@ Resources:
           Fn::GetAtt:
           - VPCStack
           - Outputs.VPCCIDR
-<<<<<<<<< saved version
-Outputs:
-  WebURL:
-    Description: "The web server URL"
-    Value:
-      Fn::GetAtt:
-      - WorkloadStack
-      - Outputs.URL
-=========
-          
+
 Outputs:
   WebUrl:
     Description: The web server URL
@@ -168,4 +159,3 @@ Outputs:
       - WorkloadStack
       - Outputs.URL
 
->>>>>>>>> local version
